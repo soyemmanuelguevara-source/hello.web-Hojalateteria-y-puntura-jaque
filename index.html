@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jaque Laminado y Pintura Automotriz — Hojalatería y Pintura en San Raymundo Jalpan, Oaxaca</title>
+  <meta name="description" content="Jaque Laminado y Pintura Automotriz: hojalatería, pintura, pulido, encerado y reparación de rines en San Raymundo Jalpan, Oaxaca. Certificados por CESVI México, garantía por escrito. Cotiza por WhatsApp.">
+  <meta name="keywords" content="hojalatería y pintura Oaxaca, taller de hojalatería San Raymundo Jalpan, pintura automotriz Oaxaca, pulido y encerado de autos, reparación de rines, CESVI México, taller Jaque, laminado automotriz">
+  <meta property="og:title" content="Jaque Laminado y Pintura Automotriz — Tu auto como nuevo, con garantía por escrito">
+  <meta property="og:description" content="Hojalatería, pintura, pulido, encerado y reparación de rines. Certificados por CESVI México. San Raymundo Jalpan, Oaxaca.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="imagenes/hero-pulido-encerado.jpeg">
+  <link rel="icon" type="image/png" href="imagenes/logo-jaque-mark.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- LOADER -->
+<div id="loader" aria-hidden="true">
+  <div class="ld-logo">
+    <img src="imagenes/logo-jaque-mark.png" alt="" class="ld-logo-img">
+    <div class="ld-ring"></div>
+  </div>
+  <div class="ld-brand">
+    <p class="ld-name">JAQUE <em>AUTOMOTRIZ</em></p>
+    <p class="ld-tag">Laminado y pintura con garantía por escrito</p>
+  </div>
+  <div class="ld-progress">
+    <div class="ld-track"><div class="ld-fill"></div></div>
+    <p class="ld-note">Cargando</p>
+  </div>
+</div>
+
+<!-- NAV -->
+<nav id="nav" role="navigation" aria-label="Menú principal">
+  <div class="nav-wrap">
+    <a href="#" class="logo" aria-label="Jaque Laminado y Pintura Automotriz">
+      <span class="logo-card"><img src="imagenes/logo-jaque-mark.png" alt="Jaque Laminado y Pintura Automotriz" class="logo-img"></span>
+      <div class="logo-word">JAQUE <em>AUTOMOTRIZ</em></div>
+    </a>
+    <ul class="nav-links" role="list">
+      <li><a href="#about">Nosotros</a></li>
+      <li><a href="#services">Servicios</a></li>
+      <li><a href="#galeria-trabajos">Trabajos</a></li>
+      <li><a href="#why">Ventajas</a></li>
+      <li><a href="#contact" class="nav-cta">Cotizar Ahora</a></li>
+    </ul>
+    <button class="hamburger" id="ham" aria-label="Abrir menú" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<div id="mob" class="mob-menu" role="navigation" aria-label="Menú móvil">
+  <a href="#about">Nosotros</a>
+  <a href="#services">Servicios</a>
+  <a href="#galeria-trabajos">Trabajos</a>
+  <a href="#why">Ventajas</a>
+  <a href="#contact">Cotizar Ahora</a>
+</div>
+
+<main>
+
+<!-- HERO -->
+<section id="hero" aria-label="Encabezado principal">
+  <div class="hero-bg" style="background-image:url('imagenes/hero-pulido-encerado.jpeg')" aria-hidden="true"></div>
+  <div class="hero-ov" aria-hidden="true"></div>
+  <canvas id="pcanvas" class="particle-canvas" aria-hidden="true"></canvas>
+
+  <div class="hero-body">
+    <div class="wrap">
+      <p class="hero-eyebrow">Jaque Laminado y Pintura Automotriz · San Raymundo Jalpan, Oaxaca</p>
+      <h1 class="hero-h1">
+        <span class="h1-line"><span class="h1-inner">Tu Auto Como Nuevo,</span></span>
+        <span class="h1-line"><span class="h1-inner">Con Garantía</span></span>
+        <span class="h1-line h1-accent"><span class="h1-inner">Por Escrito</span></span>
+      </h1>
+      <p class="hero-typewriter" aria-label="Servicios del taller">
+        <span class="tw-label">Hacemos:</span>
+        <span class="tw-text" id="twText"></span><span class="tw-cursor" aria-hidden="true">|</span>
+      </p>
+      <p class="hero-p">
+        Hojalatería, pintura, pulido, encerado y reparación de rines. Personal con formación profesional certificada y respaldo de CESVI México — recuperamos la apariencia de tu vehículo después de un choque o del desgaste diario, con trato cercano y honesto.
+      </p>
+      <div class="hero-btns">
+        <a href="https://wa.me/529511190541?text=Hola%2C%20quiero%20solicitar%20una%20cotizaci%C3%B3n%20para%20mi%20auto%20en%20Jaque%20Laminado%20y%20Pintura%20Automotriz" target="_blank" rel="noopener noreferrer" class="btn-primary">
+          Solicitar Cotización
+          <svg width="15" height="15" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+            <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+        <a href="#services" class="btn-secondary">Ver Servicios</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-stats" aria-label="Cifras clave">
+    <div class="wrap">
+      <div class="stats-row">
+        <div class="stat-col">
+          <span class="stat-val" data-hero-count="5" data-prefix="+" data-suffix="">+0</span>
+          <span class="stat-lbl">Servicios especializados</span>
+        </div>
+        <div class="stat-col">
+          <span class="stat-val" data-hero-count="100" data-prefix="" data-suffix="%">0%</span>
+          <span class="stat-lbl">Garantía por escrito</span>
+        </div>
+        <div class="stat-col">
+          <span class="stat-val">CESVI</span>
+          <span class="stat-lbl">Certificación México</span>
+        </div>
+        <div class="stat-col">
+          <span class="stat-val">Oaxaca</span>
+          <span class="stat-lbl">San Raymundo Jalpan</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-deco" aria-hidden="true">
+    <div class="hero-orb hero-orb--1"></div>
+    <div class="hero-orb hero-orb--2"></div>
+    <div class="hero-beam"></div>
+  </div>
+  <div class="hero-badge" aria-hidden="true">
+    <span class="hb-dot"></span>
+    <span class="hb-text">Garantía por escrito en cada trabajo</span>
+  </div>
+</section>
+
+<!-- TRUST BAR -->
+<section id="trust" aria-label="Lo que hacemos">
+  <div class="trust-bg" aria-hidden="true"></div>
+  <div class="wrap">
+    <div class="trust-row rev">
+      <p class="trust-label">Lo que hacemos</p>
+      <div class="trust-chips">
+        <span class="trust-chip">Hojalatería</span>
+        <span class="trust-chip">Pintura Automotriz</span>
+        <span class="trust-chip">Pulido</span>
+        <span class="trust-chip">Encerado</span>
+        <span class="trust-chip">Reparación de Rines</span>
+        <span class="trust-chip">Detallado</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="section bg-white">
+  <div class="wrap">
+    <div class="about-grid">
+      <div class="about-img-wrap rev from-l">
+        <div class="about-img-main">
+          <img
+            src="imagenes/recepcion-entrega-kia.jpeg"
+            alt="Equipo de Jaque Laminado y Pintura Automotriz en la recepción de una unidad en San Raymundo Jalpan, Oaxaca" loading="lazy">
+        </div>
+        <div class="about-accent">
+          <p class="a-num">100%</p>
+          <p class="a-lbl">Diagnóstico transparente</p>
+        </div>
+      </div>
+      <div class="about-text rev">
+        <p class="eyebrow">Quiénes somos</p>
+        <h2 class="heading heading--shine">Atención al Detalle, Respaldo Profesional</h2>
+        <p>Jaque Laminado y Pintura Automotriz es un taller especializado en hojalatería y pintura ubicado en Av. Ferrocarril, San Raymundo Jalpan, Oaxaca. Ayudamos a los propietarios de vehículos a recuperar la apariencia de su auto después de un accidente o del desgaste natural, con procesos claros y honestos de principio a fin.</p>
+        <p>Nuestro trabajo está respaldado por certificaciones de CESVI México y por la formación profesional de nuestro personal en Ingeniería Mecánica Automotriz. Esa combinación de técnica y cuidado es lo que nos permite ofrecer garantía por escrito en cada reparación que entregamos.</p>
+        <div class="about-stats">
+          <div class="a-stat">
+            <p class="a-stat-n" data-count="5" data-prefix="+" data-suffix=""></p>
+            <p class="a-stat-l">Servicios especializados</p>
+          </div>
+          <div class="a-stat">
+            <p class="a-stat-n" data-count="100" data-prefix="" data-suffix="%"></p>
+            <p class="a-stat-l">Garantía por escrito</p>
+          </div>
+          <div class="a-stat">
+            <p class="a-stat-n">CESVI</p>
+            <p class="a-stat-l">Certificación de calidad</p>
+          </div>
+          <div class="a-stat">
+            <p class="a-stat-n">Oax.</p>
+            <p class="a-stat-l">San Raymundo Jalpan</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services" class="section bg-off">
+  <div class="wrap">
+    <div class="section-head section-head--center rev">
+      <p class="eyebrow">Lo que ofrecemos</p>
+      <h2 class="heading heading--shine">Servicios de Hojalatería y Pintura Automotriz</h2>
+      <p class="sub">Diagnóstico claro, materiales de calidad y garantía por escrito en cada servicio que realizamos.</p>
+    </div>
+    <div class="svc-grid">
+
+      <div class="svc-card rev d1">
+        <span class="svc-num" aria-hidden="true">01</span>
+        <div class="svc-icon ic-gold">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M14 4l6 6-9 9-6 1 1-6 8-8z"/>
+            <path d="M13 5l6 6"/>
+          </svg>
+        </div>
+        <h3>Hojalatería</h3>
+        <p>Enderezado y reparación de la carrocería tras golpes, choques o abolladuras, devolviendo la forma original de cada pieza.</p>
+        <p class="svc-models">Diagnóstico visual sin costo</p>
+        <div class="svc-tags">
+          <span class="tag tag-gold">Enderezado</span>
+          <span class="tag tag-gold">Abolladuras</span>
+          <span class="tag tag-gold">Carrocería</span>
+        </div>
+      </div>
+
+      <div class="svc-card rev d2">
+        <span class="svc-num" aria-hidden="true">02</span>
+        <div class="svc-icon ic-gold">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M12 2c2 3 3 5 3 7a3 3 0 1 1-6 0c0-2 1-4 3-7z"/>
+            <path d="M5 21c0-3 3-5 7-5s7 2 7 5"/>
+          </svg>
+        </div>
+        <h3>Pintura Automotriz</h3>
+        <p>Igualación exacta de color y aplicación profesional para un acabado uniforme, sin marcas de reparación.</p>
+        <p class="svc-models">Igualación de color a la pintura original</p>
+        <div class="svc-tags">
+          <span class="tag tag-gold">Igualación de color</span>
+          <span class="tag tag-gold">Acabado uniforme</span>
+          <span class="tag tag-gold">Garantía escrita</span>
+        </div>
+      </div>
+
+      <div class="svc-card rev d3">
+        <span class="svc-num" aria-hidden="true">03</span>
+        <div class="svc-icon ic-gold">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="8"/>
+            <path d="M12 4v2M12 18v2M4 12h2M18 12h2"/>
+          </svg>
+        </div>
+        <h3>Pulido</h3>
+        <p>Eliminamos rayones superficiales y opacidad de la pintura para recuperar el brillo original de tu vehículo.</p>
+        <p class="svc-models">Pulido con equipo profesional</p>
+        <div class="svc-tags">
+          <span class="tag tag-gold">Brillo</span>
+          <span class="tag tag-gold">Antirrayones</span>
+          <span class="tag tag-gold">Acabado espejo</span>
+        </div>
+      </div>
+
+      <div class="svc-card rev d4">
+        <span class="svc-num" aria-hidden="true">04</span>
+        <div class="svc-icon ic-gold">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M12 3l2.6 5.3 5.9.8-4.3 4.1 1 5.8-5.2-2.7-5.2 2.7 1-5.8-4.3-4.1 5.9-.8z"/>
+          </svg>
+        </div>
+        <h3>Encerado</h3>
+        <p>Protección de la pintura contra el sol, el agua y el polvo, con un acabado que resalta el color de tu auto.</p>
+        <p class="svc-models">Protección duradera de la carrocería</p>
+        <div class="svc-tags">
+          <span class="tag tag-gold">Protección UV</span>
+          <span class="tag tag-gold">Repelente al agua</span>
+          <span class="tag tag-gold">Realce de color</span>
+        </div>
+      </div>
+
+      <div class="svc-card rev d5">
+        <span class="svc-num" aria-hidden="true">05</span>
+        <div class="svc-icon ic-gold">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="9"/>
+            <circle cx="12" cy="12" r="3"/>
+            <path d="M12 3v3M12 18v3M3 12h3M18 12h3"/>
+          </svg>
+        </div>
+        <h3>Reparación de Rines</h3>
+        <p>Corrección de golpes, rayones y deformaciones en rines, dejándolos listos como si fueran nuevos.</p>
+        <p class="svc-models">Restauración de rines dañados</p>
+        <div class="svc-tags">
+          <span class="tag tag-gold">Enderezado de rines</span>
+          <span class="tag tag-gold">Acabado</span>
+          <span class="tag tag-gold">Precisión</span>
+        </div>
+      </div>
+
+      <div class="svc-card rev d6">
+        <span class="svc-num" aria-hidden="true">06</span>
+        <div class="svc-icon ic-gold">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M4 13l1-6h14l1 6"/>
+            <rect x="3" y="13" width="18" height="6" rx="1"/>
+            <circle cx="7.5" cy="19" r="1.2"/>
+            <circle cx="16.5" cy="19" r="1.2"/>
+          </svg>
+        </div>
+        <h3>Detallado Automotriz</h3>
+        <p>Lavado, pulida y encerada completa para que tu vehículo luzca cuidado por dentro y por fuera.</p>
+        <p class="svc-models">Lavado · Pulida · Encerada</p>
+        <div class="svc-tags">
+          <span class="tag tag-gold">Lavado</span>
+          <span class="tag tag-gold">Interior y exterior</span>
+          <span class="tag tag-gold">Cuidado total</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- PROCESO / TRABAJOS -->
+<section id="galeria-trabajos" class="section bg-white">
+  <div class="wrap">
+    <div class="prod-header rev">
+      <div>
+        <p class="eyebrow">Trabajo en proceso</p>
+        <h2 class="heading heading--shine">Así Cuidamos Cada Detalle</h2>
+      </div>
+      <a href="#contact" class="btn-outline">Cotizar mi Auto</a>
+    </div>
+    <div class="prod-grid">
+
+      <div class="prod-card rev d1">
+        <div class="prod-photo">
+          <img src="imagenes/diagnostico-danos.jpeg" alt="Diagnóstico visual de daños en carrocería antes de reparar en Jaque Laminado y Pintura Automotriz" loading="lazy">
+        </div>
+        <h3>Diagnóstico de Daños</h3>
+        <p>Revisamos y te explicamos cada golpe o rayón antes de iniciar, sin sorpresas en el presupuesto.</p>
+        <a class="prod-pill" href="https://wa.me/529511190541?text=Hola%2C%20quiero%20que%20revisen%20los%20da%C3%B1os%20de%20mi%20auto%20y%20me%20den%20una%20cotizaci%C3%B3n" target="_blank" rel="noopener noreferrer">Pedir diagnóstico</a>
+      </div>
+
+      <div class="prod-card rev d2">
+        <div class="prod-photo">
+          <img src="imagenes/hojalateria-pintura-proceso.jpeg" alt="Técnico de Jaque Laminado y Pintura Automotriz preparando la carrocería para pintura" loading="lazy">
+        </div>
+        <h3>Preparación y Pintura</h3>
+        <p>Enmascarado y preparación cuidadosa antes de aplicar pintura, para un acabado parejo y duradero.</p>
+        <a class="prod-pill" href="https://wa.me/529511190541?text=Hola%2C%20quiero%20cotizar%20un%20trabajo%20de%20hojalater%C3%ADa%20y%20pintura" target="_blank" rel="noopener noreferrer">Cotizar pintura</a>
+      </div>
+
+      <div class="prod-card rev d3">
+        <div class="prod-photo">
+          <img src="imagenes/pulido-detallado-suv.jpeg" alt="Pulido y encerado profesional de SUV en Jaque Laminado y Pintura Automotriz" loading="lazy">
+        </div>
+        <h3>Pulido y Encerado</h3>
+        <p>Equipo y productos profesionales para devolverle el brillo a la pintura de tu vehículo.</p>
+        <a class="prod-pill" href="https://wa.me/529511190541?text=Hola%2C%20quiero%20cotizar%20un%20pulido%20y%20encerado" target="_blank" rel="noopener noreferrer">Cotizar pulido</a>
+      </div>
+
+      <div class="prod-card rev d4">
+        <div class="prod-photo">
+          <img src="imagenes/detallado-mazda.jpeg" alt="Detallado automotriz de Mazda 3 en las instalaciones de Jaque Laminado y Pintura Automotriz" loading="lazy">
+        </div>
+        <h3>Detallado Completo</h3>
+        <p>Lavado, pulida y encerada para que tu auto salga del taller luciendo como nuevo.</p>
+        <a class="prod-pill" href="https://wa.me/529511190541?text=Hola%2C%20quiero%20cotizar%20un%20detallado%20completo%20para%20mi%20auto" target="_blank" rel="noopener noreferrer">Cotizar detallado</a>
+      </div>
+
+      <div class="prod-card rev d5">
+        <div class="prod-photo">
+          <img src="imagenes/recepcion-entrega-f150.jpeg" alt="Recepción de unidad Ford F-150 en Jaque Laminado y Pintura Automotriz" loading="lazy">
+        </div>
+        <h3>Recepción de tu Unidad</h3>
+        <p>Registramos el estado de tu vehículo a su llegada para darte un seguimiento claro del trabajo.</p>
+        <a class="prod-pill" href="https://wa.me/529511190541?text=Hola%2C%20quiero%20llevar%20mi%20auto%20al%20taller%2C%20%C2%BFc%C3%B3mo%20es%20el%20proceso%3F" target="_blank" rel="noopener noreferrer">Preguntar proceso</a>
+      </div>
+
+      <div class="prod-card rev d6">
+        <div class="prod-photo">
+          <img src="imagenes/taller-fachada-kia.jpeg" alt="Instalaciones de Jaque Laminado y Pintura Automotriz en San Raymundo Jalpan, Oaxaca" loading="lazy">
+        </div>
+        <h3>Nuestras Instalaciones</h3>
+        <p>Área de trabajo equipada para lavado, pulida y encerada, lista para recibir tu vehículo.</p>
+        <a class="prod-pill" href="#contact">Cómo llegar</a>
+      </div>
+
+    </div>
+    <p class="prod-note rev">¿Tu auto necesita algo distinto? Escríbenos por WhatsApp y te decimos tiempos y presupuesto sin compromiso.</p>
+  </div>
+</section>
+
+<!-- WHY -->
+<section id="why" class="section bg-navy">
+  <div class="why-bg" style="background-image:url('imagenes/hojalateria-pintura-proceso.jpeg')" aria-hidden="true"></div>
+  <canvas id="pcanvasWhy" class="particle-canvas" aria-hidden="true"></canvas>
+  <div class="wrap">
+    <div class="why-grid">
+      <div class="why-img-wrap rev from-r">
+        <div class="why-img-main">
+          <img
+            src="imagenes/recepcion-entrega-f150.jpeg"
+            alt="Entrega de unidad Ford F-150 lista en Jaque Laminado y Pintura Automotriz" loading="lazy">
+        </div>
+        <div class="why-img-badge">
+          <p class="wib-n">100%</p>
+          <p class="wib-l">Garantía por escrito</p>
+        </div>
+      </div>
+      <div class="why-content rev">
+        <p class="eyebrow eyebrow--white">Por qué elegirnos</p>
+        <h2 class="heading heading--white heading--shine-dark">La Diferencia Jaque</h2>
+        <p class="sub sub--white">Reparar tu auto es una decisión importante — te damos la confianza de un trabajo bien hecho, con respaldo real.</p>
+        <div class="benefit-list">
+          <div class="benefit">
+            <div class="ben-icon ben-icon-g">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="3" y="3" width="18" height="14" rx="2"/>
+                <path d="M8 21h8M12 17v4"/>
+                <path d="M8 8l3 3 5-5"/>
+              </svg>
+            </div>
+            <div>
+              <h4>Garantía Por Escrito</h4>
+              <p>Cada trabajo de hojalatería y pintura queda respaldado con garantía por escrito, sin letras chiquitas.</p>
+            </div>
+          </div>
+          <div class="benefit">
+            <div class="ben-icon ben-icon-g">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M12 2l3 6 6 .9-4.5 4.3L17.5 20 12 16.8 6.5 20l1-6.8L3 8.9 9 8z"/>
+              </svg>
+            </div>
+            <div>
+              <h4>Certificados por CESVI México</h4>
+              <p>Nuestros procesos están respaldados por certificaciones CESVI México, garantía de estándares del sector.</p>
+            </div>
+          </div>
+          <div class="benefit">
+            <div class="ben-icon ben-icon-g">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M22 10v6M2 10l10-5 10 5-10 5-10-5z"/>
+                <path d="M6 12v5c0 1.5 2.5 3 6 3s6-1.5 6-3v-5"/>
+              </svg>
+            </div>
+            <div>
+              <h4>Personal con Formación Profesional</h4>
+              <p>Nuestro equipo cuenta con formación en Ingeniería Mecánica Automotriz, no solo experiencia de taller.</p>
+            </div>
+          </div>
+          <div class="benefit">
+            <div class="ben-icon ben-icon-g">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/>
+              </svg>
+            </div>
+            <div>
+              <h4>Trato Cercano y Honesto</h4>
+              <p>Te explicamos con claridad cada diagnóstico y presupuesto, sin cargos ocultos ni tecnicismos.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CÓMO FUNCIONA -->
+<section id="numbers">
+  <div class="numbers-bg" aria-hidden="true"></div>
+  <div class="numbers-ov" aria-hidden="true"></div>
+  <div class="wrap">
+    <div class="section-head section-head--center rev">
+      <p class="eyebrow eyebrow--white">Cómo funciona</p>
+      <h2 class="heading heading--white heading--shine-dark">Cotiza tu Reparación en 4 Pasos</h2>
+    </div>
+    <div class="numbers-grid">
+      <div class="number-item rev d1">
+        <p class="num-v">01</p>
+        <p class="num-l">Cuéntanos qué le pasó a tu auto por WhatsApp o en el taller</p>
+      </div>
+      <div class="number-item rev d2">
+        <p class="num-v">02</p>
+        <p class="num-l">Hacemos un diagnóstico visual y te damos un presupuesto claro</p>
+      </div>
+      <div class="number-item rev d3">
+        <p class="num-v">03</p>
+        <p class="num-l">Trabajamos tu unidad con procesos certificados por CESVI México</p>
+      </div>
+      <div class="number-item rev d4">
+        <p class="num-v">04</p>
+        <p class="num-l">Recibes tu auto listo, con garantía por escrito</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GALERÍA -->
+<section id="galeria">
+  <canvas id="pcanvasGaleria" class="particle-canvas" aria-hidden="true"></canvas>
+  <div class="wrap">
+    <div class="brands-head rev">
+      <p class="eyebrow eyebrow--white">Nuestro Taller</p>
+      <h2 class="heading heading--white heading--shine-dark">Así Trabajamos Cada Unidad</h2>
+      <p class="brands-sub">Un vistazo a nuestras instalaciones y al cuidado que ponemos en cada vehículo.</p>
+    </div>
+    <div class="brands-grid">
+      <div class="brand-card rev d1">
+        <div class="brand-card-inner">
+          <img src="imagenes/hero-pulido-encerado.jpeg" alt="Pulido y encerado de vehículo en Jaque Laminado y Pintura Automotriz" loading="lazy">
+        </div>
+      </div>
+      <div class="brand-card rev d2">
+        <div class="brand-card-inner">
+          <img src="imagenes/hojalateria-pintura-proceso.jpeg" alt="Preparación de carrocería para pintura en Jaque Laminado y Pintura Automotriz" loading="lazy">
+        </div>
+      </div>
+      <div class="brand-card rev d3">
+        <div class="brand-card-inner">
+          <img src="imagenes/diagnostico-danos.jpeg" alt="Diagnóstico de daños en carrocería en Jaque Laminado y Pintura Automotriz" loading="lazy">
+        </div>
+      </div>
+      <div class="brand-card rev d4">
+        <div class="brand-card-inner">
+          <img src="imagenes/recepcion-entrega-kia.jpeg" alt="Entrega de unidad Kia Sportage en Jaque Laminado y Pintura Automotriz" loading="lazy">
+        </div>
+      </div>
+      <div class="brand-card rev d1">
+        <div class="brand-card-inner">
+          <img src="imagenes/pulido-detallado-suv.jpeg" alt="Detallado de SUV en Jaque Laminado y Pintura Automotriz" loading="lazy">
+        </div>
+      </div>
+      <div class="brand-card rev d2">
+        <div class="brand-card-inner">
+          <img src="imagenes/detallado-mazda.jpeg" alt="Detallado de Mazda 3 en Jaque Laminado y Pintura Automotriz" loading="lazy">
+        </div>
+      </div>
+      <div class="brand-card rev d3">
+        <div class="brand-card-inner">
+          <img src="imagenes/recepcion-entrega-f150.jpeg" alt="Recepción de Ford F-150 en Jaque Laminado y Pintura Automotriz" loading="lazy">
+        </div>
+      </div>
+      <div class="brand-card rev d4">
+        <div class="brand-card-inner">
+          <img src="imagenes/taller-fachada-kia.jpeg" alt="Instalaciones de Jaque Laminado y Pintura Automotriz en San Raymundo Jalpan, Oaxaca" loading="lazy">
+        </div>
+      </div>
+    </div>
+    <p class="brands-note rev">Certificados por: CESVI México · Formación profesional en Ingeniería Mecánica Automotriz</p>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section bg-off">
+  <div class="wrap">
+    <div class="contact-grid">
+
+      <div class="contact-info rev from-l">
+        <div class="contact-info-bg" aria-hidden="true"></div>
+        <div class="contact-info-content">
+          <p class="eyebrow eyebrow--white">Contáctanos</p>
+          <h2 class="heading heading--white">Solicita tu Cotización</h2>
+          <p class="sub sub--white" style="margin-bottom:32px">Cuéntanos qué le pasó a tu auto y te respondemos directo por WhatsApp o teléfono con el diagnóstico y presupuesto.</p>
+          <div class="c-item">
+            <div class="c-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.91a16 16 0 0 0 6 6l.91-.91a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 21.73 16.27z"/>
+              </svg>
+            </div>
+            <div>
+              <p class="c-label">Teléfono / WhatsApp</p>
+              <p class="c-value"><a href="tel:+529511190541">951 119 0541</a></p>
+            </div>
+          </div>
+          <div class="c-item">
+            <div class="c-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/>
+              </svg>
+            </div>
+            <div>
+              <p class="c-label">WhatsApp directo</p>
+              <p class="c-value"><a href="https://wa.me/529511190541" target="_blank" rel="noopener noreferrer">+52 1 951 119 0541</a></p>
+            </div>
+          </div>
+          <div class="c-item">
+            <div class="c-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                <path d="M22 6l-10 7L2 6"/>
+              </svg>
+            </div>
+            <div>
+              <p class="c-label">Correo</p>
+              <p class="c-value"><a href="mailto:dbrionesantonio1987@gmail.com">dbrionesantonio1987@gmail.com</a></p>
+            </div>
+          </div>
+          <div class="c-item">
+            <div class="c-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/>
+                <circle cx="12" cy="10" r="3"/>
+              </svg>
+            </div>
+            <div>
+              <p class="c-label">Ubicación</p>
+              <p class="c-value">Av. Ferrocarril, San Raymundo Jalpan, Oaxaca</p>
+            </div>
+          </div>
+          <div class="c-item">
+            <div class="c-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="12" cy="12" r="10"/>
+                <polyline points="12 6 12 12 16 14"/>
+              </svg>
+            </div>
+            <div>
+              <p class="c-label">Horario</p>
+              <p class="c-value">Escríbenos por WhatsApp para agendar tu cita</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="rev">
+        <div class="form-wrap">
+          <h3>Solicitar Cotización</h3>
+          <p class="form-sub">Te respondemos a la brevedad por WhatsApp con diagnóstico y presupuesto.</p>
+          <form id="cForm" novalidate>
+            <div class="frow">
+              <div class="fg">
+                <label class="fl" for="fn">Nombre completo *</label>
+                <input class="fi" type="text" id="fn" name="nombre" placeholder="Su nombre completo" required autocomplete="name">
+              </div>
+              <div class="fg">
+                <label class="fl" for="ft">Teléfono *</label>
+                <input class="fi" type="tel" id="ft" name="telefono" placeholder="+52 951 000 0000" required autocomplete="tel">
+              </div>
+            </div>
+            <div class="fg">
+              <label class="fl" for="fs">Servicio que necesitas *</label>
+              <select class="fi" id="fs" name="tipo" required>
+                <option value="">Seleccione una opción</option>
+                <option value="Hojalatería">Hojalatería</option>
+                <option value="Pintura automotriz">Pintura automotriz</option>
+                <option value="Pulido">Pulido</option>
+                <option value="Encerado">Encerado</option>
+                <option value="Reparación de rines">Reparación de rines</option>
+                <option value="Detallado automotriz">Detallado automotriz</option>
+                <option value="Otro">Otro</option>
+              </select>
+            </div>
+            <div class="fg">
+              <label class="fl" for="fm">Cuéntanos qué le pasó a tu auto</label>
+              <textarea class="fi" id="fm" name="mensaje" rows="3" placeholder="Marca, modelo, año, tipo de daño u otro detalle que debamos saber..."></textarea>
+            </div>
+            <button type="submit" class="btn-submit">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+              </svg>
+              Solicitar Cotización por WhatsApp
+            </button>
+          </form>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="map-card rev">
+      <a class="map-link" href="https://www.google.com/maps/search/?api=1&query=Av.+Ferrocarril%2C+San+Raymundo+Jalpan%2C+Oaxaca" target="_blank" rel="noopener noreferrer" aria-label="Abrir la ubicación de Jaque Laminado y Pintura Automotriz en Google Maps">
+        <iframe
+          class="map-frame"
+          src="https://maps.google.com/maps?q=Av.+Ferrocarril,+San+Raymundo+Jalpan,+Oaxaca,+Mexico&output=embed"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Ubicación de Jaque Laminado y Pintura Automotriz en Google Maps"
+          aria-hidden="true" tabindex="-1">
+        </iframe>
+        <span class="map-tag">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/>
+          </svg>
+          Ver en Google Maps · San Raymundo Jalpan, Oaxaca
+        </span>
+      </a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- FOOTER -->
+<footer>
+  <div class="foot-bg" aria-hidden="true"></div>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <div class="foot-logo">
+          <span class="logo-card"><img src="imagenes/logo-jaque-mark.png" alt="Jaque Laminado y Pintura Automotriz" class="foot-logo-img"></span>
+          <div class="logo-word">JAQUE <em>AUTOMOTRIZ</em></div>
+        </div>
+        <p class="foot-desc">Hojalatería, pintura, pulido, encerado y reparación de rines en San Raymundo Jalpan, Oaxaca. Certificados por CESVI México, con garantía por escrito en cada trabajo.</p>
+      </div>
+      <div>
+        <p class="foot-col-title">Servicios</p>
+        <ul class="foot-links">
+          <li><a href="#services">Hojalatería</a></li>
+          <li><a href="#services">Pintura Automotriz</a></li>
+          <li><a href="#services">Pulido y Encerado</a></li>
+          <li><a href="#services">Reparación de Rines</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="foot-col-title">Taller</p>
+        <ul class="foot-links">
+          <li><a href="#about">Quiénes somos</a></li>
+          <li><a href="#galeria-trabajos">Nuestros trabajos</a></li>
+          <li><a href="#why">Por qué elegirnos</a></li>
+          <li><a href="#galeria">Instalaciones</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="foot-col-title">Contacto</p>
+        <ul class="foot-links">
+          <li><a href="tel:+529511190541">951 119 0541</a></li>
+          <li><a href="https://wa.me/529511190541" target="_blank" rel="noopener noreferrer">WhatsApp directo</a></li>
+          <li><a href="mailto:dbrionesantonio1987@gmail.com">Enviar correo</a></li>
+          <li><a href="#contact">Cotizar Ahora</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <p>© 2026 <span>Jaque Laminado y Pintura Automotriz</span>. Todos los derechos reservados.</p>
+      <p>San Raymundo Jalpan, Oaxaca, México</p>
+    </div>
+  </div>
+</footer>
+
+<!-- FLOATING ACTION BUTTONS -->
+<div class="fab-stack">
+  <div class="fab-item">
+    <span class="fab-tip">Escríbenos por WhatsApp</span>
+    <a href="https://wa.me/529511190541"
+       target="_blank"
+       rel="noopener noreferrer"
+       class="fab-btn wa-btn"
+       aria-label="Contactar por WhatsApp">
+      <svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true">
+        <path fill="#fff" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+      </svg>
+    </a>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
